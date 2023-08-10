@@ -14,7 +14,7 @@ public class Calculadora {
     public static void main(String[] args) {
       Scanner leer = new Scanner(System.in);
        int opcion;
-       int num1 = 0; 
+       int num1 = 0;
        int num2 = 0;
        int respuesta;
        
@@ -40,8 +40,13 @@ public class Calculadora {
                System.out.println ("La multiplicacion de ambos numeros es: " +respuesta);
             }
            case 4 -> {
+               if (num2 == 0){
+                   System.out.println("No se puede dividir por 0");
+               }
+               else{
                respuesta = num1 / num2;
                System.out.println ("La division de ambos numeros es: " +respuesta);
+               }
             }
        }
        
