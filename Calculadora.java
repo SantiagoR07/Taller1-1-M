@@ -26,6 +26,7 @@ public class Calculadora {
        System.out.println("Digite el segunto numero");
        num2 = leer.nextInt();
        
+      
        switch(opcion){
            case 1 -> {
                respuesta= num1 + num2;
@@ -49,6 +50,7 @@ public class Calculadora {
                }
             }
        }
-       
     }
 }
+
+       
