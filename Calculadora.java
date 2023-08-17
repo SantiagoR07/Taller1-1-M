@@ -18,7 +18,17 @@ public class Calculadora {
        int num2 = 0;
        int respuesta;
        
-       System.out.println("Elige la operacion a realizar\n1. Sumar\n2. Resta\n3. Multiplicacion\n 4. Division\n 5. Seno\n 6. Coseno\n 7. Tangente");
+       System.out.println("""
+                          Elige la operacion a realizar
+                          1. Sumar
+                          2. Resta
+                          3. Multiplicacion
+                           4. Division
+                           5. Seno
+                           6. Coseno
+                           7. Tangente
+                           8. Raiz enecima
+                           9. potencia enecima""");
        opcion = leer.nextInt();
        
       
@@ -80,7 +90,25 @@ public class Calculadora {
        System.out.println ("La tangente del numero ingresado es: " +respuesta);
            }
            case 8 ->{
-               
+               System.out.println("Digite el primer numero");
+       num1 = leer.nextInt();
+       System.out.println("Digite el exponente de la raiz");
+       int indice = leer.nextInt();
+       respuesta = math.pow(num1, 1.0/indice);
+       if (indice == 0){
+           System.out.println ("El numero no puede elevarse al numero 0");
+       }else{
+           respuesta = math.pow(num1, 1.0/indice);
+       System.out.println ("La raiz "+indice+" es: " +respuesta);
+            }
+           }
+           case 9 ->{
+               System.out.println("Digite el primer numero");
+       num1 = leer.nextInt();
+       System.out.println("Digite el exponente de la potencia");
+       num2 = leer.nextInt();
+       respuesta = math.pow(num1,num2);
+       System.out.println ("El resultado de la potencia es: " +respuesta);
            }
        }
     }
