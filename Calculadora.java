@@ -18,7 +18,7 @@ public class Calculadora {
        int num2 = 0;
        int respuesta;
        
-       System.out.println("Elige la operacion a realizar\n1. Sumar\n2. Resta\n3. Multiplicacion\n 4. Division\n 5. Seno");
+       System.out.println("Elige la operacion a realizar\n1. Sumar\n2. Resta\n3. Multiplicacion\n 4. Division\n 5. Seno\n 6. Coseno\n 7. Tangente");
        opcion = leer.nextInt();
        
       
@@ -70,9 +70,17 @@ public class Calculadora {
            case 6 ->{
                System.out.println("Digite el primer numero");
        num1 = leer.nextInt();
-       System.out.println("Digite el segunto numero");
-       num2 = leer.nextInt();
-       
+       respuesta = (int) Math.cos(num1);
+       System.out.println ("El coseno del numero ingresado es: " +respuesta);
+           }
+           case 7 ->{
+               System.out.println("Digite el primer numero");
+       num1 = leer.nextInt();
+       respuesta = (int) Math.tan(num1);
+       System.out.println ("La tangente del numero ingresado es: " +respuesta);
+           }
+           case 8 ->{
+               
            }
        }
     }
