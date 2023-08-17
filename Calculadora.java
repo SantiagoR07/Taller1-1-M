@@ -27,6 +27,7 @@ public class Calculadora {
        num2 = leer.nextInt();
        
       
+      
        switch(opcion){
            case 1 -> {
                respuesta= num1 + num2;
